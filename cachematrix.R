@@ -1,4 +1,4 @@
-## makeCacheMatrix() will take a atrix and store its inverse
+## makeCacheMatrix() will take a matrix and store its inverse
 ## cacheSolve retrieves the inversed matrix from the cached value that is stored in makeCacheMatrix()'s environment
 
 ## Assignment number 3.
