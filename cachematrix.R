@@ -1,11 +1,15 @@
-## makeCacheMatrix() will take a matrix and store its inverse
-## cacheSolve retrieves the inversed matrix from the cached value that is stored in makeCacheMatrix()'s environment
+## input a matrix to compute its inverse, if there is already an existing matrix
+## it checks if it is the same with the old one
+## if it is, the cacheSolve will return the old matrix
+
 
 ## Assignment number 3.
 ## i understand a little how the code works, but i cant grasp the idea fully
 ## would really appreciate if you have any recommended articles, readings, or videos
 ## i want to understand R more as it is interesting 
 ## but my current level of understanding does not make it more fun
+
+## make CacheMatrix will cache a matrix's inverse
 
 makeCacheMatrix <- function(x = matrix()) {
 
@@ -25,7 +29,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## retrieves the inversed matrix from the cache
+## cacheSolve retrieves the inversed matrix from the cached value that is stored in makeCacheMatrix()'s environment
 
 cacheSolve <- function(x, ...) {
         m <- x$getinverse()
