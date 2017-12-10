@@ -1,7 +1,11 @@
-## Put comments here that give an overall description of what your
-## functions do
+## makeCacheMatrix() will take a atrix and store its inverse
+## cacheSolve retrieves the inversed matrix from the cached value that is stored in makeCacheMatrix()'s environment
 
-## Assignment number 3. will invert a matrix using cached data using lexical scoping 
+## Assignment number 3.
+## i understand a little how the code works, but i cant grasp the idea fully
+## would really appreciate if you have any recommended articles, readings, or videos
+## i want to understand R more as it is interesting 
+## but my current level of understanding does not make it more fun
 
 makeCacheMatrix <- function(x = matrix()) {
 
@@ -16,10 +20,12 @@ makeCacheMatrix <- function(x = matrix()) {
         list(set = set, 
              get = get,
              setinverse = setinverse,
-             getinverse = getinverse}
+             getinverse = getinverse)
+             
+}
 
 
-## retrieves the inverse matrix from the cache
+## retrieves the inversed matrix from the cache
 
 cacheSolve <- function(x, ...) {
         m <- x$getinverse()
